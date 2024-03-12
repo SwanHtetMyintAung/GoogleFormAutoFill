@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "GFAFill",
+    "version": "1.0",
+  
+    "description": "An Extension To Auto Fill Up form",
+  
+    "icons": {
+      "48": "./icons/form.png"
+    },
+    "permissions":["activeTab","storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://docs.google.com/*"],
+        "js": ["GFAF.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "browser_action":{
+        "default_icon":"./icons/form.png",
+        "default_title":"Fill Your Form Automatically",
+        "default_popup":"./index.html"
+    }
+  }
+  

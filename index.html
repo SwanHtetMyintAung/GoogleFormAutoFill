@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFAF</title>
+    <style>
+        *{
+            font-family: sans-serif ;
+        }
+        b{
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form{
+            margin-top:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        label{
+            padding-top:20px;
+        }
+        input , input:focus{
+            border:none;
+            border-bottom: 1px solid black;
+            height:1.5rem;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            border:none;
+            background-color: #4bbf1a;
+            margin:20px auto;
+            color: white;
+            border-radius:20px;
+            width:50%;
+            height:2rem;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <b>Welcome To Google Form Auto Fill!</b>
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" value=""/>
+        <label for="email">Email:</label>
+        <input id="email" type="email" value=""/>
+    </form>
+    <button id="initial-button">Click To Autofill!</button>
+</body>
+    <script type="module" src="./script.js">
+        console.log("hllo there")
+    </script>
+</html>
